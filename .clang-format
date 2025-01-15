@@ -1,0 +1,35 @@
+#===================================================================================================
+# Notes
+#===================================================================================================
+# See: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+#===================================================================================================
+# Base
+#===================================================================================================
+BasedOnStyle: LLVM
+# BasedOnStyle: Google
+# BasedOnStyle: Chromium
+# BasedOnStyle: Mozilla
+# BasedOnStyle: WebKit
+# BasedOnStyle: Microsoft
+# BasedOnStyle: GNU
+
+#===================================================================================================
+# Config
+#===================================================================================================
+AlignConsecutiveMacros:
+    AcrossComments: false
+    AcrossEmptyLines: true
+    Enabled: true
+AlignAfterOpenBracket: BlockIndent
+AllowShortFunctionsOnASingleLine: Empty
+BinPackArguments: false
+BinPackParameters: false
+ColumnLimit: 100
+IndentExternBlock: NoIndent # No indent for extern "C"
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+MacroBlockBegin: "^FN|fn|^STRUCT|^mstruct"
+MacroBlockEnd: "^END|^end"
+IndentPPDirectives: None  # or BeforeHash depending on your preference
