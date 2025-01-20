@@ -19,7 +19,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 # ==================================================================================================
 # Include
 # ==================================================================================================
-set(inc PUBLIC demos/inc include)
+set(inc PUBLIC demos/inc ${CMAKE_SOURCE_DIR})
 include_directories(inc) # Include directories for CMake to search
 
 # ==================================================================================================
