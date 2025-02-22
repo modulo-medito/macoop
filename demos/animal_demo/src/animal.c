@@ -57,41 +57,49 @@
 // GLOBAL FUNCTION DEFINITION
 //==================================================================================================
 //--------------------------------------------------------------------------------------------------
-// Dogs
+impl(Dog);
 //--------------------------------------------------------------------------------------------------
-fn(Dog, void, say, mself)
+fn(Dog, void, say)
     printf("Dog say: Wof Wof Wof ...\n");
 end
 
-fn(Dog, u16, getnum, mself)
+fn(Dog, u16, getnum)
     printf("Dogs num is %d\n", self->num);
     return self->num;
 end
 
-fn(Dog, void, special_move, mself)
+fn(Dog, void, special_move)
     printf("Dogs has special move\n");
 end
 
 //--------------------------------------------------------------------------------------------------
-// Cats
+impl(Beagle);
 //--------------------------------------------------------------------------------------------------
-fn(Cat, void, say, mself)
+fn(Beagle, u8, getcolor)
+    printf("Beagle color is %d\n", self->color);
+    return self->color;
+end
+
+//--------------------------------------------------------------------------------------------------
+impl(Cat);
+//--------------------------------------------------------------------------------------------------
+fn(Cat, void, say)
     printf("Cat say: Mew Mew Mew ...\n");
 end
 
-fn(Cat, u16, getnum, mself)
+fn(Cat, u16, getnum)
     printf("Cats num is %d\n", self->num);
     return self->num;
 end
 
 //--------------------------------------------------------------------------------------------------
-// Duck
+impl(Duck);
 //--------------------------------------------------------------------------------------------------
-fn(Duck, void, say, mself)
+fn(Duck, void, say)
     printf("Duck say: Ga Ga Ga ...\n");
 end
 
-fn(Duck, u16, getnum, mself)
+fn(Duck, u16, getnum)
     printf("Ducky num is %d\n", self->num);
     return self->num;
 end

@@ -30,6 +30,8 @@ IndentExternBlock: NoIndent # No indent for extern "C"
 IndentWidth: 4
 TabWidth: 4
 UseTab: Never
+# For macoop formatting
 MacroBlockBegin: "^FN|fn|^STRUCT|^mstruct"
 MacroBlockEnd: "^END|^end"
+StatementMacros: [child, implfn, trait, impl_trait, IMPLFN, IMPL_TRAIT]
 IndentPPDirectives: None  # or BeforeHash depending on your preference
